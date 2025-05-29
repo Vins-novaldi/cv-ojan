@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV Muhammad Fauzan</title>
+    <link rel="stylesheet" href="css/cv.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="logo"> MyWebsite</div>
+
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <i class="fas fa-home"></i>
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="cv.html" class="nav-link">
+              <i class="fas fa-file-alt"></i>
+              CV
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="hubungi-kami.html" class="nav-link">
+              <i class="fas fa-envelope"></i>
+              Hubungi Kami
+            </a>
+          </li>
+          <li class="nav-item social-dropdown">
+            <a href="media-sosial.html" class="nav-link">
+              <i class="fas fa-share-alt"></i>
+              Sosial Media
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="header">CV Muhammad Fauzan</div>
+
+    <div class="cv-container">
+      <table class="cv-table" border="1" cellspacing="0" cellpadding="10">
+        <tr>
+          <td colspan="1" class="header-photo">
+            <img src="image/profil.jpeg" alt="Foto Profil">
+          </td>
+          <td colspan="3" class="header-biodata">
+            <h3 class="section-title">BIODATA</h3>
+            <table class="inner-table">
+              <tr>
+                <td>
+                  <ul>
+                    <li>Nama</li>
+                    <li>Tempat/Tanggal Lahir</li>
+                    <li>Alamat</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>: Nunu Waliyani</li>
+                    <li>: Banjarneg, 17-09-2001</li>
+                    <li>: Jl. Jeud Sudirman</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+    
+        <tr>
+          <td colspan="2" class="section-title">PENGALAMAN</td>
+          <td colspan="2" class="section-title">ORGANISASI</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <ul>
+              <li>Pengalaman 1</li>
+              <li>Pengalaman 2</li>
+              <li>Pengalaman 3</li>
+            </ul>
+          </td>
+          <td colspan="2">
+            <ul>
+              <li>LDK (Lembaga Dakwah Kampus)</li>
+              <li>REMAJA (Remaja Masjid Markaz Islami)</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="section-title">PENDIDIKAN</td>
+          <td colspan="2" class="section-title">KEAHLIAN</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <table class="inner-table">
+              <tr>
+                <td>
+                  <ul>
+                    <li>Nama</li>
+                    <li>Tempat/Tanggal Lahir</li>
+                    <li>Alamat</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>: Nama</li>
+                    <li>: Tempat/Tanggal Lahir</li>
+                    <li>: Alamat</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td colspan="2">
+            <table>
+              <tr>
+                <td>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                    <li>JQUERY</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>PHP</li>
+                    <li>SQL</li>
+                    <li>FW CI</li>
+                    <li>PYTHON DJANGO</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="footer">COPYRIGHT ALL RESERVED BY @m.fauzan</div>
+
+    <div class="box-btn-dark">
+      <button onclick="toggleDarkMode()" class="btn-dark">dark mode</button>
+    </div>
+
+      <script>
+        let lastScrollTop = 0;
+        const navbar = document.getElementById("navbar");
+
+        window.addEventListener("scroll", () => {
+          const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+          if (scrollTop > lastScrollTop) {
+            // Scroll Down
+            navbar.style.top = "-100px"; // Sembunyikan navbar
+          } else {
+            // Scroll Up
+            navbar.style.top = "0"; // Tampilkan navbar
+          }
+
+          lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Menghindari nilai negatif
+        });
+    </script>
+    <script src="js.js"></script>
+  </body>
+</html>

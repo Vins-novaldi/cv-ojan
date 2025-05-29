@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="css/hubungi.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+</head>
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <div class="logo">MyWebsite</div>
+
+    <ul class="nav-menu" id="navMenu">
+      <li class="nav-item">
+        <a href="index.html" class="nav-link">
+          <i class="fas fa-home"></i>
+          Home
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="cv.html" class="nav-link">
+          <i class="fas fa-file-alt"></i>
+          CV
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="hubungi-kami.html" class="nav-link">
+          <i class="fas fa-envelope"></i>
+          Hubungi Kami
+        </a>
+      </li>
+      <li class="nav-item social-dropdown">
+        <a href="media-sosial.html" class="nav-link"><i class="fas fa-share-alt"></i>Sosial Media
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2><span>Contact</span> Me</h2>
+        <h3>Let's Work Together</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum nobis possimus tenetur quidem fugit?</p>
+        <div class="info">
+          <p><i class="fas fa-paper-plane"></i> contact@gmail.com</p>
+          <p><i class="fas fa-phone"></i> 0123456789</p>
+        </div>
+        <div class="btn">
+          <a href="media-sosial.html">sosial media</a>
+        </div>
+      </div>
+
+      <form class="contact-form">
+        <input type="text" placeholder="Enter Your Name" required>
+        <input type="email" placeholder="Enter Your Email" required>
+        <input type="text" placeholder="Enter Your Subject">
+        <textarea placeholder="Enter Your Message" rows="5" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+  <div class="box-btn-dark">
+    <button onclick="toggleDarkMode()" class="btn-dark">dark mode</button>
+  </div>
+  <script>
+    let lastScrollTop = 0;
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", () => {
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop > lastScrollTop) {
+    // Scroll Down
+    navbar.style.top = "-100px"; // Sembunyikan navbar
+  } else {
+    // Scroll Up
+    navbar.style.top = "0"; // Tampilkan navbar
+  }
+
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Menghindari nilai negatif
+});
+  </script>
+  <script src="js.js"></script>
+</body>
+</html>
