@@ -267,8 +267,8 @@ section {
 
 .box-sosial a {
   font-size: 2.2rem;
-  width: 75px;
-  height: 75px;
+  width: 80px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -281,6 +281,9 @@ section {
   opacity: 0;
   animation: fadeInRight 0.8s ease forwards;
   animation-delay: calc(0.2s * var(--i));
+}
+.box-sosial a img{
+  width: 45px;
 }
 
 .box-sosial a:hover {
@@ -312,17 +315,13 @@ section {
   }
 }
 
-.instagram-text {
-  color: #c13584;
-}
-
-.tiktok-text {
-  color: #000000;
-}
 
 @media (max-width: 760px) {
   .box-sosial {
     gap: 15px;
+  }
+  .box-sosial a img{
+    width: 30px;
   }
 
   .box-sosial a {
@@ -410,7 +409,7 @@ body.dark-mode {
   .logo {
     font-weight: bold;
     color: #f500ff;
-    text-shadow: 0 0 3px #00fff7;
+    text-shadow: 0 0 3px #f500ff;
   }
 
   .nav-link {
@@ -472,19 +471,13 @@ body.dark-mode {
     text-decoration: none;
     color: #ffffff;
   }
+  .box-sosial a img{
+    filter: drop-shadow(0 0 1px #f500ff);
+  }
 
-  /* Hover efek neon */
   .box-sosial a:hover {
     transform: translateY(-5px);
     box-shadow: 0 0 15px #00fff7, 0 0 30px #f500ff;
   }
 
-  /* Warna khusus (jika ingin lebih personalisasi) */
-  .instagram-text {
-    color: #f500ff;
-  }
-
-  .tiktok-text {
-    color: #00fff7;
-  }
 }

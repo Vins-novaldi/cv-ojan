@@ -441,7 +441,7 @@ body.dark-mode {
   .logo {
     font-weight: bold;
     color: #f500ff;
-    text-shadow: 0 0 3px #00fff7;
+    text-shadow: 0 0 3px #f500ff;
   }
 
   .nav-link {
